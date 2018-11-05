@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        .cover {
+            height: 100%;
+            padding: 0;
+            background: linear-gradient(to right, rgba(196,118,222,1) 0%, rgba(151,61,196,1) 52%, rgba(99,95,217,1) 100%), url(pictures/pattern4.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-clip: text;
+            -webkit-background-clip: text;
+            position: relative;
+            z-index: 2;
+            background-blend-mode: multiply;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+            color: transparent;
+            font-size: 150px;
+            text-align: center;
+            line-height: .8;
+            font-family: 'Courier New', Courier, monospace
+        }
+
+        .img-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            background-image: url(pictures/pattern2.jpg);
+            background-size: cover;
+            filter: blur(8px) brightness(90%);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="cover">
+        <h2>CSS <br> is <br> awesome</h2>
+    </section>
+
+    <div class="img-bg"></div>
+
+</body>
+
+</html>
