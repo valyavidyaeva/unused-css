@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS, которого у вас нет.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <link rel="stylesheet" href="shower/custom/custom.css">
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>CSS, которого у вас нет.</h1>
+		<p>Видяева Валентина, hajs#6</p>
+    </header>
+
+    <section class="slide slide1 center-slide" id="cover">
+        <h2>CSS, <br> которого у вас нет.</h2>
+        <p>Vidyaeva Valentina, hajs#6</p>
+    </section>
+
+    <section class="slide slide2">
+        <ol>
+            <li>Дизайн с этими свойствами не модный</li>
+            <li>Дизайнер или вы не знаете/не помните про эти свойства</li>
+            <li>Эти свойства не имеют широкой браузерной поддержки</li>
+        </ol>
+    </section>
+
+    <section class="slide slide3">
+        <ol>
+            <li>background-clip/clip-path</li>
+            <li>conic-gradient</li>
+            <li>shape</li>
+            <li>filter</li>
+            <li>mix-blend-mode/background-blend-mode</li>
+            <li>perspective</li>
+        </ol>
+    </section>
+
+    <section class="slide slide4 center-slide">
+        <h2 class="title title_150">background-clip</h2>
+    </section>
+
+    <section class="slide slide5">
+        <h2>background-clip</h2>
+        <pre>
+            <code>.slide4 {</code>
+            <code>  background-image: url(../pictures/pattern4.jpg);</code>
+            <code>  background-clip: <mark>text</mark>;</code>
+            <code>  -webkit-background-clip: <mark>text</mark>;</code>
+            <code>}</code>
+            <code>h2 {</code>
+            <code>  color: transparent;</code>
+            <code>}</code>
+        </pre>
+    </section>
+
+    <section class="slide slide5">
+        <div class="mount-wrap">
+            <div class="sky"></div>
+            <div class="mount"></div>
+        </div>
+    </section>
+
+    <style>
+        .mount-wrap {
+            width: 100%;
+            height: 100%;
+        }
+        .sky {
+            height: 100%;
+            background-color: #6D9EEB;
+        }
+        .mount {
+            position: relative;
+            top: -50%;
+            height: 70%;
+            background: linear-gradient(to top, #9c7609 70%, #fff 70%, #fff 100%);
+            clip-path: polygon(0% 80%, 27% 0%, 37% 50%, 50% 20%, 60% 50%, 77% 0%, 100% 80%);
+        }
+    </style>
+    <section class="slide slide5">
+		<h2>clip-path</h2>
+		<pre>
+            <code>.mount {</code>
+            <code>    background: linear-gradient(to top, #9c7609 70%, 
+                                    #fff 70%, #fff 100%);</code>
+            <code>    clip-path: polygon(0% 80%, 27% 0%, 37% 50%, 
+                            50% 20%, 60% 50%, 77% 0%, 100% 80%);</code>
+            <code>}</code>
+		</pre>
+    </section>
+
+    <section class="slide slide6" id="picture">
+        <figure>
+            <img class="cover" src="pictures/ciu-bgclip.jpg" alt="">
+        </figure>
+    </section>
+
+    <section class="slide slide7">
+        <h2 class="title title_150">conic-gradient</h2>
+    </section>
+
+    <section class="slide slide8 center-slide">
+        <div class="conic-gradients-list">
+            <div class="conic-gradient pyramid"></div>
+            <div class="conic-gradient pyramid-gradient"></div>
+        </div>
+    </section>
+
+    <section class="slide slide9">
+		<h2>conic-gradient</h2>
+		<pre>
+            <code>.pyramid {</code>
+            <code>    background: conic-gradient(
+                #6D9EEB 37.5%, #7F6000 37.5%,
+                #7F6000 43.5%, #FFD966 43.5%,
+                #FFD966 61.5%, #6D9EEB 61.5%);</code>
+            <code>}</code>
+            <code>.gradient-pyramid {</code>
+            <code>    background: conic-gradient(
+                rgb(109, 158, 235), rgb(127, 96, 0), 
+                rgb(255, 217, 102), rgb(109, 158, 235));</code>
+            <code>}</code>
+        </pre>
+    </section>
+
+    <section class="slide slide10" id="picture">
+        <figure>
+            <img class="cover" src="pictures/ciu-conic-gradient.jpg" alt="">
+        </figure>
+    </section>
+
+    <section class="slide slide11 center-slide">
+        <h2 class="title title_150">shape</h2>
+    </section>
+
+    <section class="slide slide12">
+        <article class="slide12__article">
+            <p class="left">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodont consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat none proident, sunt in proident culpa qui officia.</p>
+            <img src="./pictures/round.jpg" alt="" class="shape">
+            <p class="right">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodont consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat none proident, sunt in culpa qui officia.</p>
+        </article>
+    </section>
+
+    <section class="slide slide13">
+        <h2>shape</h2>
+        <pre>
+            <code>.shape {</code>
+            <code>    <mark>shape-outside</mark>: circle(90px at 80% 68%);</code>
+            <code>}</code>
+        </pre>
+
+        <img src="./pictures/shape-explanation.png" alt="" class="shape-explanation">
+    </section>
+
+    <section class="slide slide14" id="picture">
+        <figure>
+            <img class="cover" src="pictures/ciu-shape.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide slide15 center-slide">
+        <h2 class="title title_150">filter</h2>
+    </section>
+
+    <section class="slide slide16 center-slide">
+        <div class="filters-list">
+            <img src="./pictures/pattern1.jpg" class="filter">
+            <img src="./pictures/pattern1.jpg" class="filter filter-blur">
+            <img src="./pictures/pattern1.jpg" class="filter filter-hue-rotate">
+            <img src="./pictures/pattern1.jpg" class="filter filter-saturate">
+            <img src="./pictures/pattern1.jpg" class="filter filter-contrast">
+            <img src="./pictures/pattern1.jpg" class="filter filter-saturate-contrast">
+        </div>
+    </section>
+
+    <section class="slide slide17">
+        <h2>filter</h2>
+        <pre>
+            <code>.filter-saturate {</code>
+            <code>    filter: saturate(8);</code>
+            <code>}</code>
+            <code>.filter-contrast {</code>
+            <code>    filter: contrast(4);</code>
+            <code>}</code>
+            <code>.filter-blur {</code>
+            <code>    filter: blur(5px);</code>
+            <code>}</code>
+        </pre>
+    </section>
+
+    <section class="slide slide18" id="picture">
+        <figure>
+            <img class="cover" src="pictures/ciu-filter.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide slide19 center-slide">
+        <h2 class="title title_100 blend-mode-letters">
+            <span>m</span>
+            <span>i</span>
+            <span>x</span>
+            <span>-</span>
+            <span>b</span>
+            <span>l</span>
+            <span>e</span>
+            <span>n</span>
+            <span>d</span>
+            <span>-</span>
+            <span>m</span>
+            <span>o</span>
+            <span>d</span>
+            <span>e</span>
+        </h2>
+    </section>
+
+    <section class="slide slide20 center-slide">
+        <div class="blend-mode-list">
+            <div class="blend-mode-item exclusion">CSS is awesome</div>
+            <div class="blend-mode-item multiply">
+                CSS is awesome
+                <img src="./pictures/pattern1.jpg" alt="">
+                <img src="./pictures/pattern2.jpg" alt="">
+            </div>
+            <div class="blend-mode-item multiply-screen">CSS is awesome</div>
+        </div>
+    </section>
+
+    <section class="slide slide21">
+        <h2>blend-mode</h2>
+        <pre>
+            <code>.bm-html {</code>
+            <code>    mix-blend-mode: exclusion;</code>
+            <code>}</code>
+            <code>.bm-background {</code>
+            <code>    background-blend-mode: multiply;</code>
+            <code>}</code>
+        </pre>
+    </section>
+
+    <section class="slide slide22">
+        <img class="" src="pictures/ciu-bg-blend-mode.png" alt="">
+        <img class="" src="pictures/ciu-mix-blend-mode.png" alt="">
+    </section>
+
+
+    <section class="slide slide15 center-slide">
+        <h2 class="title title_100">perspective</h2>
+    </section>
+
+    <section class="slide slide18" id="picture">
+        <figure>
+            <img class="cover" src="pictures/ciu-perspective.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide slide2">
+        <h3>Итоги</h3>
+        <ol>
+            <li>Подойдут для необычных промо-сайтов</li>
+            <li>Можно использовать как "прогрессивное украшение"</li>
+        </ol>
+    </section>
+
+    <section class="slide slide15 center-slide">
+        <h2 class="title title_100">Спасибо!</h2>
+    </section>
+    <div class="progress"></div>
+
+    <script src="shower/shower.min.js"></script>
+</body>
+</html>
